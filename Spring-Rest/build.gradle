@@ -19,13 +19,13 @@ dependencies {
 
 jar {
   manifest {
-    attributes 'Implementation-Title': 'com.newrelic.instrumentation.Spring-Rest'
-    attributes 'Implementation-Vendor': 'New Relic'
-    attributes 'Implementation-Vendor-Id': 'com.newrelic'
+    attributes 'Implementation-Title': 'com.newrelic.instrumentation.labs.Spring-Rest'
+    attributes 'Implementation-Vendor': 'New Relic Labs'
+    attributes 'Implementation-Vendor-Id': 'com.newrelic.labs'
     attributes 'Implementation-Version': 1.0
   }
 }
 
 verifyInstrumentation {
-  passes 'org.springframework:spring-web:[4.3.6,6.0.0)'
+  passes 'org.springframework:spring-web:[4.3.6.RELEASE,6.0.0.RELEASE)'
 }

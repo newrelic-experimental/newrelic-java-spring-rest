@@ -19,7 +19,8 @@
 
 # New Relic Java Instrumentation for Spring REST
 
-Provides instrumentation for the Java - Spring REST implementation. 
+Provides instrumentation for the Java - Spring REST implementation.
+The current release supports spring-web framwork upto 5.x.x  
 
 
 ## Installation
