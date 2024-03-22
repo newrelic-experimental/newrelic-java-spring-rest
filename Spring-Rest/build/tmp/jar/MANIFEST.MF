@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Title: com.newrelic.instrumentation.labs.labs.Spring-Rest
+Implementation-Vendor: New Relic Labs Labs
+Implementation-Vendor-Id: com.newrelic.labs.labs
+Implementation-Version: 1.0
+

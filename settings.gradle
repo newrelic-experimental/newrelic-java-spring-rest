@@ -1,2 +1,3 @@
 rootProject.name = 'java-instrumentation-template'
-include 'Spring-Rest'
+include 'spring-rest'
+include 'spring-rest-6.0'
