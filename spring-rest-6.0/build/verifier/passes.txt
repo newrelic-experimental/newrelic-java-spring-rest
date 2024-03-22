@@ -1,2 +1,0 @@
-spring-rest-6.0 org.springframework:spring-web:6.0.0
-spring-rest-6.0 org.springframework:spring-web:5.0.0.RELEASE
