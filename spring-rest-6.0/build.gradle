@@ -26,4 +26,5 @@ jar {
 
 verifyInstrumentation {
   passes 'org.springframework:spring-web:[6.0.0,)'
+  excludeRegex '.*M[1-9].*'
 }
