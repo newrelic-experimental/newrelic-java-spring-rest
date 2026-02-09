@@ -6,18 +6,18 @@ apply plugin: 'java'
 targetCompatibility = JavaVersion.VERSION_17
 
 dependencies {
-    implementation 'org.springframework:spring-web:6.0.0'
+   implementation 'org.springframework:spring-web:7.0.0'
 
-    // New Relic Labs Java Agent dependencies
-    implementation 'com.newrelic.agent.java:newrelic-agent:8.4.0'
-    implementation 'com.newrelic.agent.java:newrelic-api:8.4.0'
+   // New Relic Labs Java Agent dependencies
+   implementation 'com.newrelic.agent.java:newrelic-agent:8.4.0'
+   implementation 'com.newrelic.agent.java:newrelic-api:8.4.0'
     implementation 'com.newrelic.agent.java:agent-bridge:8.4.0'
-    implementation fileTree(include: ['*.jar'], dir: '../test-lib')
+   implementation fileTree(include: ['*.jar'], dir: '../test-lib')
 }
 
 jar {
   manifest {
-    attributes 'Implementation-Title': 'com.newrelic.instrumentation.labs.spring-rest-6.0'
+    attributes 'Implementation-Title': 'com.newrelic.instrumentation.labs.spring-rest-7.0'
     attributes 'Implementation-Vendor': 'New Relic Labs'
     attributes 'Implementation-Vendor-Id': 'com.newrelic.labs'
     attributes 'Implementation-Version': 1.0
@@ -25,7 +25,7 @@ jar {
 }
 
 verifyInstrumentation {
-    passesOnly 'org.springframework:spring-web:[6.0.0,7.0.0)'
+    passesOnly 'org.springframework:spring-web:[7.0.0,)'
     excludeRegex '.*M[1-9].*'
     excludeRegex '.*RC[1-9].*'
 }
